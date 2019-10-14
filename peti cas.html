@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Forma</title>
+        <style>
+            body 
+            {
+                font-size: 20px;
+                background-color: beige;
+            }
+            legend
+            {
+                font-size: 110%;
+                font-weight: bold;
+                background-color:teal;
+                color: aliceblue;
+            }
+            form
+            {
+                background-color: darkorchid;
+                width: 450px;
+            }
+            fieldset
+            {
+                background-color: darksalmon;
+            }
+            .dugme
+            {
+                background-color: greenyellow;
+                width: 100%;
+            }
+            .dugme:hover
+            {
+                background-color: blue;
+            }
+            .dugme:active
+            {
+                background-color: bisque;
+            }
+            input
+            {
+                border-radius: 5px;
+            }
+            input:focus
+            {
+                border: 5px solid yellow;
+                border-radius: 5px;
+            }
+            div
+            {
+                padding: 5px;
+            }
+            label:hover
+            {
+                font-size: 25px;
+                font-style: italic;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Licni podaci</legend>
+                <div>
+                    <label>Ime:</label>
+                    <input type="text" value="Unesite ime..." minlength="7">
+                </div>
+                <div>
+                    <label>Prezime:</label>
+                    <input type="text" placeholder="Unesite prezime...">
+                </div>
+                <div>
+                    <label>Pol</label>
+                    <input type="radio" name="pol" value="z">Zenski
+                    <input type="radio" name="pol" value="m">Muski
+                    <input type="radio" name="pol" value="d" checked>Drugo
+                </div>
+                <div>
+                    <label>E-mail:</label>
+                    <input type="email">
+                </div>
+                <div>
+                    <label>Lozinka</label>
+                    <input type="password">
+                </div>
+                <div>
+                    <label>Godine:</label>
+                    <input type="number" min="18" step="1">
+                </div>
+                <div>
+                    <label>Skriveno polje:</label>
+                    <input type="hidden">
+                </div>
+                <div>
+                    <label>URL adresa:</label>
+                    <input type="url">
+                </div>
+                <div>
+                    <label>Datum:</label>
+                    <input type="date" min="2017-10-07" max="2019-10-08" step="3">
+                </div>
+                <div>
+                    <label>Vreme:</label>
+                    <input type="time">
+                </div>
+                <div>
+                    <label>Vas Cv:</label>
+                    <input type="file">
+                </div>
+                <div>
+                    <label>Motivaciono pismo:</label>
+                    <textarea minlength="100" maxlength="500"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Ostale informacije:</legend>
+                <div>
+                    <label>Unesite omiljenu boju:</label>
+                    <input type="color" value="#ff0000">
+                </div>
+                <div>
+                    <label>Odaberite kurs:</label>
+                    <input type="radio" name="kurs" value="php" checked> PHP
+                    <input type="radio" name="kurs" value="qa"> QA (Testiranje softvera)
+                    <input type="radio" name="kurs" value="java"> Java
+                </div>
+                <br>
+                <div>
+                    <label>Alati koje znam:</label><br>
+                    <input type="checkbox" name="alati" value="htlm" checked> Html <br>
+                    <input type="checkbox" name="alati" value="css"> Css <br>
+                    <input type="checkbox" name="alati" value="js"> JavaScrit <br>
+                    <input type="checkbox" name="alati" value="sql"> Sql<br>
+                </div>
+            </fieldset>
+            <br>
+            <input class="dugme" type="button" value="Klikni" onclick="alert('Zdravo!')">
+            <input class="dugme" type="submit" value="Potvrdi">
+            <input class="dugme" type="reset" value="Resetuj">
+        </form>
+    </body>
+</html>
